@@ -25,13 +25,13 @@ function makeArc(mX, mY, amp){
     sw = abs(amp * sin(y * amp + time));
     for (let x1 = 0; x1 < windowWidth; x1 += 2 * mX){
       strokeWeight(sw*(mY/40));
-      stroke(255,30,50)
+      stroke(0)
       arc(x1, y, mX, mY, 0, PI);
     }
 
     for (let x2 = 0; x2 < windowWidth; x2 += 2 * mX){
       strokeWeight(sw*(mX/40));
-      stroke(255,30,50);
+      stroke(0);
       arc(x2 + mX, y, mX, mY, PI, 2 * PI);
     }
   }
